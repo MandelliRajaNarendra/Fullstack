@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content=" width=device-width,initial-scale=1.0">
+      <title> Shopping Website</title>
+      <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+      <link rel="stylesheet" href="style.css">
+   </head>
+    <body>
+
+      <header>
+         <div class="nav container">
+            <a href="#" class="logo">SHOPPING</a>         
+            <a href="#" class="name">HOME</a>
+            <a href="/about" class="name">ABOUT</a>
+            <a href="#" class="name">SERVICE</a>
+            <a href="/contact" class="name">CONTACT</a>
+            <a href="#" class="name">LOGOUT</a>
+            <div class="search-bar">
+               <form id="search-form">
+                   <input type="text" id="search-input" placeholder="Search">
+                   <button type="submit"><i class="bx bx-search"></i></button>
+               </form>
+           </div>
+           
+           
+               
+            <i class='bx bx-shopping-bag' id= "cart-icon"></i>
+            <div class="cart">
+                  <h2 class="cart-title">Your cart</h2>
+                  <div class="cart-content">
+                     <div class="cart-box">
+                     </div>
+                  </div>
+                  <div class="total">
+                     <div class="total-title"></div>
+                     <div class="total-price"></div>
+                  </div>
+                  <button type="button" class="btn-buy">Buy Now</button>
+                  <i class='bx bx-x' id="close-cart"></i>
+            </div>
+         </div>
+      </header>
+
+      <section class="shop container">
+
+         <div class="section-title">Shop Products</div>
+         
+         <div class="slider-container">
+            <div class="slider">
+               
+                <div class="slide">
+                    <img src="https://static.vecteezy.com/system/resources/previews/003/692/287/original/big-sale-discount-promotion-banner-template-with-blank-product-podium-scene-graphic-free-vector.jpg" alt="one" class="sale">
+                </div>
+             
+                <div class="slide">
+                    <img src="https://www.sbicard.com/sbi-card-en/assets/media/images/personal/offers/categories/shopping/b-l-h-images/m-lg-june23.jpg" alt="" class="sale">
+                </div>
+               
+                <div class="slide">
+                    <img src="https://cdn.grabon.in/gograbon/images/web-images/uploads/1617867420705/beauty-coupons.jpg" alt="" class="sale">
+                </div>
+          
+                <div class="slide">
+                    <img src="https://assets.mspimages.in/gear/wp-content/uploads/2023/04/Croma-Everything-Apple-Featured.jpg" alt="" class="sale">
+                </div>
+
+                <div class="slide">
+                    <img src="https://in-files.apjonlinecdn.com/landingpages/hero-carousel/images/w100_rakhi_phase_1_mobile_v3.jpg" alt="" class="sale">
+                </div>
+            </div>
+            <div class="controls">
+                <button class="prevBtn">&#8249;</button>
+                <button class="nextBtn">&#8250;</button>
+            </div>
+        </div>
+
+            <div class="shop-content">
+               <div class="product-box"> 
+                  <img src="https://assets.adidas.com/images/h_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/7a0b1ffb290f4d64876dac5c00308f90_9366/Performance_Primegreen_Polo_Shirt_Black_GQ3134_01_laydown.jpg" alt="" class="product-img">
+                  <h2 class="product-title">AEROREADY SHIRT</h2>
+                  <span class="price">₹ 4,299.00</span>
+                  <i class="bx bx-shopping-bag add-cart"></i>
+               </div>
+            
+
+            <div class="product-box"> 
+               <img src="https://images-cdn.ubuy.co.in/63644623b7950e2a9a53d553-wireless-earbuds-bluetooth-5-1-true.jpg" alt="" class="product-img">
+               <h2 class="product-title">WIRELESS EARBUDS</h2>
+               <span class="price">₹ 699.00</span>
+               <i class="bx bx-shopping-bag add-cart"></i>
+            </div>
+         
+
+         <div class="product-box"> 
+            <img src="https://d2xamzlzrdbdbn.cloudfront.net/products/72099fb8-372f-486c-8b83-8c465636647722090603.jpg" alt="" class="product-img">
+            <h2 class="product-title"> APPLE iPHONE 14 PRO MAX </h2>
+            <span class="price">₹ 1,39,999.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      
+
+         <div class="product-box"> 
+            <img src="https://images-cdn.ubuy.co.in/63a243d15737d017ed3a0734-water-bottles-insulated-40oz-inspi.jpg" alt="" class="product-img">
+            <h2 class="product-title">STRAW METAL WATER BOTTLE</h2>
+            <span class="price">₹ 5,540.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      
+
+         <div class="product-box"> 
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlZyDgXo0dmsnrMkqed_j_mRa6MxOx3TWTWw&usqp=CAU" alt="" class="product-img">
+            <h2 class="product-title">SMART WATCHS</h2>
+            <span class="price">₹ 1,229.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      
+
+         <div class="product-box"> 
+            <img src="https://sathya.in/media/89555/catalog/HP%20Laptop%2015S%20FQ5111TU%20CI5%201235U%208GB%20RAM%20512GB.jpg" alt="" class="product-img">
+            <h2 class="product-title">HP 15S LAPTOP</h2>
+            <span class="price">₹ 58,500.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      
+
+         <div class="product-box"> 
+            <img src="https://images.meesho.com/images/products/70579719/pnzus_512.webp" alt="" class="product-img">
+            <h2 class="product-title">TUFA LIFE BAG</h2>
+            <span class="price">₹ 539.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      
+
+         <div class="product-box"> 
+            <img src="https://rukminim2.flixcart.com/image/450/500/xif0q/shoe/1/8/p/-original-imaghvb7kkpy73vn.jpeg?q=90&crop=false" alt="" class="product-img">
+            <h2 class="product-title"> RUNNING SHOES</h2>
+            <span class="price">₹ 1,299.00</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+         </div>
+      </div>
+      </section>
+
+
+
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding:0;
+    scroll-behavior:  smooth;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+:root {
+    --main-color:#fd4646;
+    --text-color:#171427;
+    --bg-color:#fff;  
+}
+img{
+    width: 100%;
+}
+body {
+    color:var(--text-color);
+}
+.container {
+   max-width: 1068px;
+   margin: auto;
+   width: 100%;
+}
+section {
+   padding: 4rem 0 3rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--bg-color);
+    box-shadow: 0 1px 4px hsl(0 4% 15% / 10%);
+    z-index: 100;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.logo{
+   font-size: 1.1rem;
+   color: var(--text-color);
+   font-weight: 400;
+}
+.name{
+   font-size: 1rem;
+   color: var(--text-color);
+   font-weight: 400;
+}
+#cart-icon {
+   font-size: 1.8rem;
+   cursor: pointer;
+}
+.cart {
+   position: fixed;
+   top: 0;
+   right: -100%;
+   width: 360px;
+   min-height: 100vh;
+   padding: 20px;
+   background: var(--bg-color);
+   box-shadow: -2px 0 4px hsl(0 4% 15% / 10%);
+   transition: 0.3s;
+}
+.cart.active{
+   right: 0;
+}
+.cart-title {
+   text-align: center;
+   font-size: 1.5rem;
+   font-weight: 600;
+   margin-top: 2rem;
+}
+.cart-box{
+   display: grid;
+   grid-template-columns: 32% 50% 18%;
+   align-items: center;
+   gap: 1rem;
+   margin-top: 1rem;
+}
+.cart-img{
+   width: 100px;
+   height: 100px;
+   object-fit: contain;
+   padding: 10px;
+}
+.detail-box {
+ display: grid;
+ row-gap: 0.5rem;
+}
+.cart-product-title{
+   font-size: 1rem;
+   text-transform: uppercase;
+}
+.cart-price {
+   font-weight: 500;
+}
+.cart-quantity {
+  border: 1px solid var(--text-color);
+  outline-color: var(--main-color);
+  width: 2.4rem;
+  text-align: center;
+  font-size: 1rem;
+}
+.cart-remove {
+   font-size: 24px;
+   color: var(--main-color);
+   cursor: pointer;
+}
+.total{
+   display: flex;
+   justify-content: flex-end;
+   margin-top: 1.5rem;
+   border-top: 1px solid var(--text-color);
+}
+.total-title {
+    font-size: 1rem;
+    font-weight: 600;
+}
+.total-price {
+  margin-left: 0.5rem;
+}
+.section-title {
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-align: center;
+   margin-bottom: 1.5rem;
+}
+.shop {
+   margin-top: 2rem;
+}
+.shop-content {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+   gap: 1.5rem;
+}
+.product-box {
+   position: relative;
+}
+.product-box:hover {
+   padding: 10px;
+   border: 1px solid var(--text-color);
+   transition: 0.4s;
+}
+.product-img {
+   width: 100%;
+   height: auto;
+   margin-bottom:0.5rem ;
+}
+.product-title {
+   font-size: 1.1rem;
+   font-weight: 600;
+   text-transform: uppercase;
+   margin-bottom: 0.5rem;
+}
+.price {
+   font-weight: 500;
+}
+.add-cart {
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   background: var(--text-color);
+   color: var(--bg-color);
+   padding: 10px;
+   cursor: pointer;
+}
+.add-cart :hover {
+   background: hsl(249, 32%, 17%);
+}
+
+.btn-buy {
+  display: flex;
+  margin: 1.5rem auto 0 auto;
+  padding: 12px 20px;
+  border: none;
+  background: var(--main-color);
+  color: var(--bg-color);
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+.btn-buy:hover {
+   background: var(--text-color);
+}
+#close-cart {
+  position: absolute;
+  top: 1rem;
+  right: 0.8rem;
+  font-size: 2rem;
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+.slide {
+    flex: 0 0 100%;
+}
+
+
+.sale {
+    max-width: 100%;
+    height: auto;
+}
+
+.controls {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.prevBtn, .nextBtn {
+    background-color: transparent;
+    border: none;
+    font-size: 80px;
+    cursor: pointer;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar input[type="text"] {
+    padding: 10px;
+    width: 200px; 
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar button[type="submit"] {
+    background-color: #333;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 5px; 
+}
+
+.name {
+    text-decoration: none; 
+    color: #333; 
+    padding: 10px; 
+    transition: border-bottom 0.3s; 
+}
+.name:hover {
+    border-bottom: 2px solid #333; 
+    padding-bottom: 8px; 
+}
+
+
+@media (max-width: 1000px) {
+   .nav {
+      padding: 15px;
+   }
+   section{
+      padding: 3rem 0 2rem ;
+   }
+   .container {
+      margin: 0 auto;
+      width: 90%;
+   }
+   .shop {
+      margin-top: 2rem !important;
+   }
+}
+@media (max-width:400px) {
+   .nav {
+      padding: 11px;
+   }
+   .logo {
+      font-size: 1rem;
+   }
+   .cart {
+      width: 320px;
+   }
+}
+@media (max-width: 360px) {
+   .shop {
+      margin-top: 1rem !important;
+   }
+   .cart {
+      width: 280px;
+   }
+}
+
+
+</style>
+<script>
+
+let cartIcon = document.querySelector("#cart-icon")
+let cart = document.querySelector(".cart")
+let closeCart = document.querySelector("#close-cart")
+
+cartIcon.onclick = () => {
+   cart.classList.add("active");
+}
+closeCart.onclick = () => {
+   cart.classList.remove("active");
+}
+
+if (document.readyState == "loading") {
+   document.addEventListener("DOMContentLoaded", ready );
+} else {
+  ready();
+}
+
+function ready () {
+   var removeCartButtons = document.getElementsByClassName("cart-remove")
+   console.log(removeCartButtons)
+   for (var i=0; i < removeCartButtons.length; i++ ) {
+      var button = removeCartButtons[i];
+      button.addEventListener("click", removeCartItem);
+   }
+   var quantityInputs = document.getElementsByClassName("cart-quantity")
+   for (var i= 0; i < quantityInputs.length; i++) {
+      var input = quantityInputs[i];
+      input.addEventListener("change", quantityChanged);
+   }
+   var addCart = document.getElementsByClassName("add-cart");
+   for (var i = 0; i < addCart.length; i++) {
+      var button = addCart[i];
+      button.addEventListener("click", addCartClicked);
+   }
+   document
+   .getElementsByClassName("btn-buy")[0]
+   .addEventListener("click", buyButtonClicked);
+}
+function buyButtonClicked() {
+   alert("Your order is placed");
+   var cartContent = document.getElementsByClassName("cart-content")[0];
+   while (cartContent.hasChildNodes()) {
+      cartContent.removeChild(cartContent.firstChild);
+   }
+   updatetotal();
+}
+
+function removeCartItem(event) {
+   var buttonClicked = event.target;
+   buttonClicked.parentElement.remove();
+   updatetotal();
+}
+function quantityChanged(event) {
+   var input = event.target;
+   if (isNaN(input.value) || input.value <= 0) {
+      input.value = 1;
+   }
+   updatetotal();
+}
+
+
+function addCartClicked(event){
+  var button = event.target;
+  var shopProducts = button.parentElement;
+  var title = shopProducts.getElementsByClassName("product-title")[0].innerText;
+  var price = parseFloat(shopProducts.getElementsByClassName("price")[0].innerText.replace("₹", "").replace(",", ""));
+  var productImg = shopProducts.getElementsByClassName("product-img")[0].src;
+  addProductToCart(title, price , productImg);
+  updatetotal();
+}
+function addProductToCart(title, price , productImg) {
+   var cartShopBox = document.createElement("div");
+   cartShopBox.classList.add("cart-box");
+   var cartItems = document.getElementsByClassName("cart-content")[0];
+   var cartItemNames = cartItems.getElementsByClassName("cart-product-title");
+   for (var i = 0; i < cartItemNames.length; i++) {
+      if (cartItemNames[i].innerText == title) {
+      alert ("You have already add this item to cart");
+      return;
+   }
+}
+var cartBoxContent = `
+                        <img src="${productImg}" alt="" class="cart-img">
+                        <div class="detail-box">
+                           <div class="cart-product-title" >${title}</div>
+                           <div class="cart-price">${price}</div>
+                           <input type="number" value="1" class="cart-quantity">
+                        </div>
+                        <i class='bx bxs-trash-alt cart-remove'></i>`;
+cartShopBox.innerHTML = cartBoxContent;
+cartItems.append(cartShopBox);
+cartShopBox
+   .getElementsByClassName("cart-remove")[0]
+   .addEventListener("click", removeCartItem);
+cartShopBox
+   .getElementsByClassName("cart-quantity")[0]
+   .addEventListener("change", quantityChanged);
+}
+
+function updatetotal() {
+    var cartContent = document.getElementsByClassName("cart-content")[0];
+    var cartBoxes = cartContent.getElementsByClassName("cart-box");
+    var total = 0;
+    for (var i = 0; i < cartBoxes.length; i++) {
+        var cartBox = cartBoxes[i];
+        var priceElement = cartBox.getElementsByClassName("cart-price")[0];
+        var quantityElement = cartBox.getElementsByClassName("cart-quantity")[0];
+        var priceText = priceElement.innerText;
+        var price = parseFloat(priceText.replace("₹", "").replace(",", ""));
+        var quantity = quantityElement.value;
+        total += price * quantity;
+    }
+
+   total = Math.round(total * 100) / 100;
+    var totalElement = document.getElementsByClassName("total-price")[0];
+    totalElement.innerText = formatIndianRupees(total);
+   }
+   function formatIndianRupees(amount) {
+    return amount.toLocaleString('en-IN', { style: 'currency', currency: 'INR' });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    const slider = document.querySelector(".slider");
+    const prevBtn = document.querySelector(".prevBtn");
+    const nextBtn = document.querySelector(".nextBtn");
+    
+    let currentIndex = 0;
+
+    prevBtn.addEventListener("click", function() {
+        currentIndex = (currentIndex - 1 + slider.children.length) % slider.children.length;
+        updateSlider();
+    });
+
+    nextBtn.addEventListener("click", function() {
+        currentIndex = (currentIndex + 1) % slider.children.length;
+        updateSlider();
+    });
+   
+    function updateSlider() {
+        const slideWidth = slider.children[0].clientWidth;
+        const newPosition = -currentIndex * slideWidth;
+        slider.style.transform = `translateX(${newPosition}px)`;
+    }
+});
+
+const searchForm = document.getElementById("search-form");
+const searchInput = document.getElementById("search-input");
+searchForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const query = searchInput.value.trim();
+    if (query === "") {
+        alert("Please enter a search query.");
+    } else {
+        alert("Searching for: " + query);
+    }
+    searchInput.value = "";
+});
+
+</script>
+
+</body>
+</html>

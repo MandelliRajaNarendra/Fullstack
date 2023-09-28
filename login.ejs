@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+    <section class="container">
+        
+       <div class="form login">
+        <form action="loginsubmit" method="post"  align="center">
+            <h1>LOGIN FORM</h1>
+            <label for="email"><b>Email ID </b></label>
+            <input type ="text" name="email" placeholder="Email"><br>
+            <label for="psw"><b>Password </b></label>
+            <input type ="password" name="password" placeholder="Password"><br>
+            <div class = "form-link">
+                <a href="#" class="forget-pass">Forget Password?</a>
+            </div>
+            <div class="Login">
+                <button type="submit" class="login">Login</button>
+                <div>
+                    <div class="line"></div>
+                </div>         
+                <div class="form-link">
+             <span>  Don't have an account <a href="http://localhost:5040/signup" class="signup"> Sign Up</a> </span>
+                </div>
+            </div>
+        </form>
+     
+       </div>
+    </section>
+
+        <style>
+body {
+background-image: url('https://img.freepik.com/premium-photo/consumer-concept-mini-shopping-trolley-shopping-colored-background-minimalism-top-view_661495-6704.jpg');
+background-position: center;
+background-size:cover ;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.form.login {
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.form.login header {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form.login form {
+  text-align: center;
+}
+
+.form.login label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form.login input[type="text"],
+.form.login input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.form-link {
+  margin-top: 10px;
+}
+
+.forget-pass {
+  text-decoration: none;
+  color: #007bff;
+}
+
+.Login button.login {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.Login .line {
+  border-top: 1px solid #ccc;
+  margin: 10px 0;
+}
+
+.Login .form-link a.signup {
+  text-decoration: none;
+  color: #007bff;
+}
+        </style>
+
+    </body>
+</html>

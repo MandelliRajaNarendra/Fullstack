@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>contact Form</title> 
+     </head>
+     <body>
+       <div class="contact-form">
+        <form align="center">
+            <h1>Contact Form</h1>
+            <input type="text" class="input-feild" placeholder="your Name">
+            <input type="text" class="input-feild" placeholder="your Email-id">
+            <input type="text" class="input-feild" placeholder="Subject">
+            <input type="text" class="input-feild textarea" placeholder="Enter message">
+            <button type="button" class="btn">Send Message</button>
+        </form>
+       </div>
+        <style>
+          body {
+            background-color: rgb(255, 140, 0);
+            font-family: sans-serif;
+          }
+          .contact-form {
+            width: 500px;
+            background-color: #fff;
+            box-shadow: 0 0 20px 0 #999;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50% , -50%);
+            position: absolute;
+          }
+          form {
+            margin: 20%;
+          }
+          .input-feild {
+              width: 300px;
+              height: 40px;
+              margin-top: 20px;
+              padding-left: 10px;
+              padding-right: 10px;
+              border: 1px solid #777;
+              border-radius: 14px;
+              outline: none;
+          }
+          .textarea {
+            height: 150px;
+            padding-top: 10px;
+
+          }
+          .btn {
+            border-radius: 20px;
+            color: #fff;
+            margin-top: 18px;
+            padding: 10px;
+            background-color: rgb(14, 190, 14);
+            font-size: 12px;
+            border: none;
+            cursor: pointer;
+          }
+
+        </style>
+           <script>
+            function sendMessage() {
+
+                var name = document.getElementById("name").value;
+                var email = document.getElementById("email").value;
+                var subject = document.getElementById("subject").value;
+                var message = document.getElementById("message").value;
+
+                var confirmationDiv = document.getElementById("confirmation");
+                confirmationDiv.style.display = "block";
+
+                document.getElementById("name").value = "";
+                document.getElementById("email").value = "";
+                document.getElementById("subject").value = "";
+                document.getElementById("message").value = "";
+
+            }
+        </script>
+
+     </body>
+</html>
